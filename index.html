@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCKET_32</title>
+
+    <link rel="stylesheet" href="./styles/style1.css">
+    <link rel="stylesheet" href="./styles/style2.css">
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            /* background-color: #dddddd; */
+        }
+    </style>
+</head>
+
+<body>
+    <header id="head">
+        <a href="#nd1">Menu1</a>
+        <a href="#nd2">Menu2</a>
+        <a href="https://google.com.vn" target="_blank" rel="noopener noreferrer">Google</a>
+        <a href="./media/black-cat-back.webp" download>Download</a>
+        <a href="mailto:thanglq.l2t@gmail.com">Send Email</a>
+        <a href="tel:+0364384662">Make a call</a>
+    </header>
+
+    <div id="left-menu">
+        <p>menu1</p>
+    </div>
+
+    <div id="around"><a href="#head">o</a></div>
+    <ul id="menu" class="menu-style" style="list-style-type:🙂;">
+        <li><a href="#nd1">Menu1</a></li>
+        <li><a href="#nd2">Menu2</a></li>
+        <li><a href="#nd3">Menu3</a></li>
+        <li><a href="#nd4">Menu4</a></li>
+    </ul>
+
+    <ol id="menu" class="menu-style" type="I" start="10">
+        <li><a href="#nd1">Menu1</a></li>
+        <li><a href="#nd2">Menu2</a></li>
+        <li><a href="#nd3">Menu3</a></li>
+        <li><a href="#nd4">Menu4</a></li>
+    </ol>
+    <section>
+        <h1>Hello world!</h1>
+        <h2>Hello world!</h2>
+        <h3>Hello world!</h3>
+        <h4>Hello world!</h4>
+        <h5>Hello world!</h5>
+        <h6>Hello world!</h6>
+    </section>
+
+    <hr>
+    </hr>
+    <p class="intro">
+        I'm Luu Quoc Thang <br />
+        Phone:
+        <span class="boldText">0364384662</span>&nbsp;-&nbsp;<span class="boldText">0703333199</span><br />
+        Address: Ha Noi<br />
+        Email: thanglq.l2t@gmail.com<br />
+        <span>I'm 18+ years old</span>
+        <span>I'm in Ha Noi</span>
+    </p>
+
+
+    <div id="gr-parent">
+        <p>thang</p>
+        <div id="parent">
+            <p id="child">
+                Hôm nay là buổi đầu học HTML
+                Nội dung gồm có:
+                    + WEB Structure
+                    + HTML tag
+                    + HTML Atribute
+                    </p>
+        </div>
+        <p>thang1</p>
+    </div>
+    
+
+
+    <div id="nd">
+        <details id="nd1" class="" style="font-size: large;" name="" open="open">
+            <summary class="boldText">Nội dung 1</summary>
+            <p>Đây là nội dung đầu tiên</p>
+        </details>
+
+        <details id="nd2">
+            <summary><b>Epcot Center</b></summary>
+            <p>
+                <strong>Epcot</strong> is a theme park at <u><b><i>Walt Disney World Resort</i></b></u> featuring
+                exciting
+                attractions, <mark>international pavilions</mark>, award-winning <s>fireworks</s> and seasonal
+                special
+                events. <br>
+                Made by Luu Thang<sup><u>[1]</u></sup><sub>L2t</sub>.
+            </p>
+        </details>
+
+        <details id="nd2">
+            <summary><b>Epcot Center</b></summary>
+            <p>
+                <strong>Epcot</strong> is a theme park at <u><b><i>Walt Disney World Resort</i></b></u> featuring
+                exciting
+                attractions, <mark>international pavilions</mark>, award-winning <s>fireworks</s> and seasonal
+                special
+                events. <br>
+                Made by Luu Thang<sup><u>[1]</u></sup><sub>L2t</sub>.
+            </p>
+        </details>
+    </div>
+
+
+    <table>
+        <caption>Students</caption>
+        <colgroup span="1" style="background-color: aqua;">
+        </colgroup>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Thang</td>
+            <td>01-09-1994</td>
+            <td rowspan="4">Des1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Thang2</td>
+            <td>01-09-1994</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Thang3</td>
+            <td>01-09-1994</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Thang4</td>
+            <td>01-09-1994</td>
+        </tr>
+        <tr>
+            <td>Sum</td>
+            <td colspan="2"></td>
+            <td>4</td>
+        </tr>
+    </table>
+
+    <hr style="border: 1px solid red;">
+
+    <h2>Form Data</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input id="name" type="text" placeholder="Vui lòng nhập tên"><br>
+        <label for="date">Date:</label>
+        <input id="date" type="date"><br>
+        <label for="des">Des:</label>
+        <textarea id="des" placeholder="Vui lòng nhập mô tả"></textarea><br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+    </form>
+    <hr style="border: 1px solid red;">
+    <form>
+        <input type="color"> <br />
+
+        <input type="time"> <br />
+        <input type="date"> <br />
+        <input type="week"> <br />
+        <input type="month"> <br />
+        <input type="datetime-local"> <br />
+
+
+        <input type="file"> <br />
+        <input type="hidden"> <br />
+        <input type="image" src="./media/black-cat-back.webp" width="50px" height="50px"> <br />
+
+        <input type="email" required> <br />
+        <input type="tel"> <br />
+        <input type="text" value="value1" readonly> <br />
+        <input type="number" max="20" min="10"> <br />
+        <input type="password"> <br />
+        <input type="url"> <br />
+        <input type="search" value="search"> <br />
+
+        <label for="html">HTML</label>
+        <input id="html" type="radio" name="lang"> <br />
+        <label for="css">CSS</label>
+        <input id="css" type="radio" name="lang"> <br />
+        <label for="js">JS</label>
+        <input id="js" type="radio" name="lang"> <br />
+        <input type="checkbox"> <br />
+
+        <input type="range"> <br />
+
+        <input type="button" value="button"> <br />
+        <input type="reset" value="reset"> <br />
+        <input type="submit" value="submit"> <br />
+    </form>
+</body>
+
+</html>
