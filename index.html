@@ -39,9 +39,9 @@
         <a href="tel:+0364384662">Make a call</a>
     </header>
 
-    <div id="left-menu">
+    <!-- <div id="left-menu">
         <p>menu1</p>
-    </div>
+    </div> -->
 
     <div id="around"><a href="#head">o</a></div>
     <ul id="menu" class="menu-style" style="list-style-type:🙂;">
@@ -127,7 +127,7 @@
     </div>
 
 
-    <table>
+    <table id="tbStudent">
         <caption>Students</caption>
         <colgroup span="1" style="background-color: aqua;">
         </colgroup>
@@ -136,31 +136,39 @@
             <th>Name</th>
             <th>Date</th>
             <th>Description</th>
+            <th>Action</th>
         </tr>
         <tr>
             <td>1</td>
             <td>Thang</td>
             <td>01-09-1994</td>
-            <td rowspan="4">Des1</td>
+            <td>Des1</td>
+            <td><button onclick="onDelete(event)">Del</button></td>
         </tr>
         <tr>
             <td>2</td>
             <td>Thang2</td>
             <td>01-09-1994</td>
+            <td>Des1</td>
+            <td><button onclick="onDelete(event)">Del</button></td>
         </tr>
         <tr>
             <td>3</td>
             <td>Thang3</td>
             <td>01-09-1994</td>
+            <td>Des1</td>
+            <td><button onclick="onDelete(event)">Del</button></td>
         </tr>
         <tr>
             <td>4</td>
             <td>Thang4</td>
             <td>01-09-1994</td>
+            <td>Des1</td>
+            <td><button onclick="onDelete(event)">Del</button></td>
         </tr>
         <tr>
             <td>Sum</td>
-            <td colspan="2"></td>
+            <td colspan="3"></td>
             <td>4</td>
         </tr>
     </table>
@@ -168,11 +176,11 @@
     <hr style="border: 1px solid red;">
 
     <h2>Form Data</h2>
-    <form>
+    <form id="addStudentForm">
         <label for="name">Name:</label>
-        <input id="name" type="text" placeholder="Vui lòng nhập tên"><br>
+        <input id="name" type="text" placeholder="Vui lòng nhập tên" required><br>
         <label for="date">Date:</label>
-        <input id="date" type="date"><br>
+        <input id="date" type="date" required><br>
         <label for="des">Des:</label>
         <textarea id="des" placeholder="Vui lòng nhập mô tả"></textarea><br>
         <input type="submit" value="Send">
@@ -215,6 +223,8 @@
         <input type="reset" value="reset"> <br />
         <input type="submit" value="submit"> <br />
     </form>
+    <script src="./javascript/script1.js"></script>
+    <script src="./javascript/script2.js"></script>
 </body>
 
 </html>
