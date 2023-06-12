@@ -178,14 +178,15 @@
     <h2>Form Data</h2>
     <form id="addStudentForm">
         <label for="name">Name:</label>
-        <input id="name" type="text" placeholder="Vui lòng nhập tên" required><br>
+        <input id="name" type="text" placeholder="Vui lòng nhập tên" name="name" required><br>
         <label for="date">Date:</label>
-        <input id="date" type="date" required><br>
+        <input id="date" type="date" name="date" required><br>
         <label for="des">Des:</label>
-        <textarea id="des" placeholder="Vui lòng nhập mô tả"></textarea><br>
+        <textarea id="des" name="des" placeholder="Vui lòng nhập mô tả"></textarea><br>
         <input type="submit" value="Send">
         <input type="reset" value="Reset">
     </form>
+    <button id="removeBtn">Remove Event</button>
     <hr style="border: 1px solid red;">
     <form>
         <input type="color"> <br />
@@ -223,8 +224,10 @@
         <input type="reset" value="reset"> <br />
         <input type="submit" value="submit"> <br />
     </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="./javascript/script1.js"></script>
     <script src="./javascript/script2.js"></script>
+    <script src="./javascript/script3.js"></script>
 </body>
 
 </html>
